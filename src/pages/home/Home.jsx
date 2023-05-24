@@ -12,9 +12,11 @@ function Home() {
             <RecipeCard />
           ))}
         </div>
+        <div className={styles.btnWrapper}>
         <Link to={"/recipe"}>
-          <button>Recipe</button>
+          <button className={styles.btn}>Recipe</button>
         </Link>
+        </div>
       </div>
     </>
   );
