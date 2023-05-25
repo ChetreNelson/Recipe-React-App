@@ -1,15 +1,22 @@
-import React from 'react'
+
 import styles from './RecipeCard.module.css'
+import { Link } from 'react-router-dom'
 
-function RecipeCard() {
+function Recipecard(props) {
+
+
   return (
-    <div className={styles.cardWrapper}>
-         <img src="https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg" alt=""  className={styles.cardImg}/>
-         <span>Menu</span>
-         
-
+    <div className={styles.recipeCardWrapper}>
+      <Link to={`/recipe/${props.recipe.idMeal}`}>
+        <img src={props.recipe.strMealThumb} alt="food " className={styles.cardImage}/>
+      </Link>
+        
+          <div className={styles.contentWrapper}>
+            <span className={styles.mealTitle}>{props?.recipe?.strMeal}</span>
+            <span className={styles.mealSubtitle}>Time: <b>15m</b></span>  
+          </div>    
     </div>
   )
 }
 
-export default RecipeCard;
+export default Recipecard

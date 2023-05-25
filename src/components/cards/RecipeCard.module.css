@@ -1,8 +1,32 @@
-.cardwrapper{
-    
+.container{
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
 }
-.cardImg{
-    width: 150.62px;
-    height: 110px;
-    left: 1.19px;
+.recipeCardWrapper{
+    border:1px solid #ccc;
+    border-radius: 10px;
+    display: grid;
+    width: 100%;
+}
+.recipeCardWrapper img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.contentWrapper{
+    padding: 10px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: grid;
+    gap:10px;
+}
+.mealTitle{
+    font-weight: 500;
+    color:#757575;
+    font-size: 14px;
+}
+.mealSubtitle{
+    font-size: 12px;
 }

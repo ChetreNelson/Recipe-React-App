@@ -1,11 +1,9 @@
 import React from 'react'
 
-function RecipeDetail() {
+export default function RecipPlayer() {
   return (
     <div>
       
     </div>
   )
 }
-
-export default RecipeDetail
